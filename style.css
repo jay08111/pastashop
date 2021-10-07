@@ -10,6 +10,9 @@ nav {
   align-items: center;
   height: 8vh;
 }
+img {
+  object-fit: cover;
+}
 .nav-container {
   width: 200px;
 }
@@ -20,17 +23,24 @@ nav {
   justify-content: space-between;
 }
 .container {
-  margin: 5rem 0;
+  margin: 5rem 4rem;
 }
 .header {
   display: flex;
-  border: 1px solid red;
 }
 .left {
   flex: 1;
-  border: 1px solid black;
 }
 .right {
   flex: 1;
-  border: 1px solid red;
+}
+.event-container {
+  display: flex;
+  margin: 5rem 0;
+}
+.img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  margin-top: 20rem;
 }

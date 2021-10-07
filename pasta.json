@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "id": "1",
+      "name": "Alle Vongole",
+      "type": "tomato",
+      "price": 19.99,
+      "image": "./images/alle Vongole.png"
+    },
+    {
+      "id": "2",
+      "name": "Tomato",
+      "type": "tomato",
+      "price": 12.99,
+      "image": "./images/tomato spaghetti.png"
+    },
+    {
+      "id": "3",
+      "name": "Aglio olio",
+      "type": "cream",
+      "price": 14.99,
+      "image": "./images/Aglio olio.png"
+    },
+    {
+      "id": "4",
+      "name": "Bolognese",
+      "type": "cream",
+      "price": 15.99,
+      "image": "./images/Bolognese.png"
+    },
+    {
+      "id": "6",
+      "name": "Carbonara",
+      "type": "cream",
+      "price": 12.99,
+      "image": "./images/Carbonara.png"
+    },
+    {
+      "id": "7",
+      "name": "Lasagne",
+      "type": "side",
+      "price": 9.0,
+      "image": "./images/Lasagne.png"
+    },
+    {
+      "id": "8",
+      "name": "Pasta salad",
+      "type": "side",
+      "price": 8.99,
+      "image": "./images/Pasta salad.png"
+    },
+    {
+      "id": "9",
+      "name": "Macaronnes",
+      "type": "side",
+      "price": 8.0,
+      "image": "./images/Macaronnes.png"
+    },
+    {
+      "id": "10",
+      "name": "Shrimp",
+      "type": "side",
+      "price": 10.99,
+      "image": "./images/Shrimp.png"
+    },
+    {
+      "id": "11",
+      "name": "water",
+      "type": "free",
+      "price": 0,
+      "image": "./images/water.png"
+    },
+    {
+      "id": "12",
+      "name": "red wine",
+      "type": "wine",
+      "price": 21.99,
+      "image": "./images/red wine.png"
+    },
+    {
+      "id": "13",
+      "name": "white wine",
+      "type": "wine",
+      "price": 21.99,
+      "image": "./images/white wine.png"
+    },
+    {
+      "id": "14",
+      "name": "Champagne",
+      "type": "wine",
+      "price": 32.4,
+      "image": "./images/Champagne.png"
+    }
+  ]
+}

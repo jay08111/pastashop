@@ -13,6 +13,9 @@ nav {
 img {
   object-fit: cover;
 }
+.logo {
+  margin-left: 2rem;
+}
 .nav-container {
   width: 200px;
 }
@@ -33,6 +36,7 @@ img {
 }
 .right {
   flex: 1;
+  margin-left: 2rem;
 }
 .event-container {
   display: flex;
@@ -43,4 +47,11 @@ img {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 8px;
   margin-top: 20rem;
+}
+.mySlides {
+}
+
+footer {
+  height: 5vh;
+  text-align: center;
 }

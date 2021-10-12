@@ -1,3 +1,9 @@
+:root {
+  --primary: #f44336;
+  --secondary: #ff7961;
+  --dark: #ba000d;
+  --white: #fff;
+}
 * {
   padding: 0;
   margin: 0;
@@ -9,9 +15,18 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 8vh;
+  background-color: var(--primary);
+  color: var(--white);
 }
 img {
   object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 85%;
 }
 .logo {
   margin-left: 2rem;
@@ -24,7 +39,9 @@ img {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin-right: 20px;
 }
+
 .container {
   margin: 5rem 4rem;
 }
@@ -40,13 +57,13 @@ img {
 }
 .event-container {
   display: flex;
-  margin: 5rem 0;
+  margin-top: 9rem;
 }
 .img-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 8px;
-  margin-top: 20rem;
+  margin-top: 10rem;
 }
 .mySlides {
 }

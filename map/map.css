@@ -25,6 +25,10 @@ nav {
 img {
   object-fit: cover;
 }
+h1 {
+  text-align: center;
+  margin-top: 1rem;
+}
 
 .logo {
   margin-left: 2rem;
@@ -39,7 +43,31 @@ img {
   justify-content: space-between;
   margin-right: 20px;
 }
-
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-control input {
+  width: 50vw;
+}
+.form-control div {
+  margin-top: 1.2rem;
+}
+.submit {
+  width: 25vw;
+  text-align: center;
+  margin-top: 2rem;
+}
 footer {
   height: 5vh;
   text-align: center;

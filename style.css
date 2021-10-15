@@ -62,7 +62,7 @@ a {
 .img-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 8px;
+  gap: 1rem;
   margin-top: 10rem;
 }
 .mySlides {

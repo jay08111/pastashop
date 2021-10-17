@@ -44,9 +44,13 @@ a {
 
 .container {
   margin: 5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .header {
-  display: flex;
+  display: inline-block;
 }
 .left {
   flex: 1;
@@ -62,10 +66,8 @@ a {
 .img-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 3rem;
   margin-top: 10rem;
-}
-.mySlides {
 }
 
 footer {

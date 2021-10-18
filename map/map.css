@@ -68,6 +68,14 @@ h1 {
   text-align: center;
   margin-top: 2rem;
 }
+.map {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.map img {
+  height: 500px;
+}
 footer {
   height: 5vh;
   text-align: center;

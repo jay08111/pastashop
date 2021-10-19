@@ -29,7 +29,9 @@ h1 {
   text-align: center;
   margin-top: 1rem;
 }
-
+span {
+  color: var(--dark);
+}
 .logo {
   margin-left: 2rem;
 }
@@ -42,6 +44,9 @@ h1 {
   display: flex;
   justify-content: space-between;
   margin-right: 20px;
+}
+.container {
+  margin-top: 5rem;
 }
 .form-container {
   display: flex;
@@ -63,6 +68,10 @@ h1 {
 .form-control div {
   margin-top: 1.2rem;
 }
+.form-control div div {
+  display: flex;
+  justify-content: space-between;
+}
 .submit {
   width: 25vw;
   text-align: center;
@@ -71,7 +80,7 @@ h1 {
 .map {
   display: flex;
   justify-content: center;
-  margin-top: 3rem;
+  margin: 3rem 0 3rem 0;
 }
 .map img {
   height: 500px;

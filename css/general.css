@@ -1,22 +1,8 @@
 /* 
 
--- 01 TYPOGRAPHY SYSTEM 
-
   FONT SIZE SYSTEM (px)
   10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
       
-  Font weights :
-  default : 400
-  Line heights : 
-  default : 1 
- - Greys
-#555
-#333
--- 05 shadows SYSTEM
-
--- 06 border-radius
-
--- 07 whitespace 
 
 -SPACING SYSTEM (px)
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -60,6 +46,18 @@ h1 {
 span {
   color: var(--dark);
 }
+.grid {
+  display: grid;
+}
+.grid--col--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--col--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--col--4 {
+  grid-template-columns: repeat(4, 1fr);
+}
 .nav-container {
   width: 200px;
 }
@@ -69,48 +67,4 @@ span {
   display: flex;
   justify-content: space-between;
   margin-right: 20px;
-}
-.container {
-  margin-top: 5rem;
-}
-.form-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-.form-control {
-  display: flex;
-  flex-direction: column;
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.form-control input {
-  width: 50vw;
-}
-.form-control div {
-  margin-top: 1.2rem;
-}
-.form-control div div {
-  display: flex;
-  justify-content: space-between;
-}
-.submit {
-  width: 25vw;
-  text-align: center;
-  margin-top: 2rem;
-}
-.map {
-  display: flex;
-  justify-content: center;
-  margin: 3rem 0 3rem 0;
-}
-.map img {
-  height: 500px;
-}
-footer {
-  height: 5vh;
-  text-align: center;
 }

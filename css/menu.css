@@ -1,0 +1,41 @@
+.underline {
+  width: 3rem;
+  height: 0.045rem;
+  background-color: var(--dark);
+  margin: 0 auto;
+}
+.nav-container {
+  width: 200px;
+}
+
+.nav-container ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+footer {
+  height: 5vh;
+  text-align: center;
+}
+.img-container {
+  row-gap: 3.2rem;
+  margin-top: 5rem;
+  padding: 0 8.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.img-box {
+  justify-content: center;
+  align-items: center;
+}
+.menu-image {
+  width: 12rem;
+  height: 12rem;
+}
+@media screen and (max-width: 780px) {
+  .img-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

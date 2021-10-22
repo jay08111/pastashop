@@ -15,7 +15,7 @@ class Pasta {
   displayImage(item) {
     let result = "";
     item.map((pasta) => {
-      result += `<div>
+      result += `<div class="img-box grid">
       <img src=${pasta.image} alt=${pasta.name} class="menu-image" />
       <h4>${pasta.price}$</h4>
       <button>장바구니에 추가</button>

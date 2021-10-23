@@ -43,9 +43,7 @@ header {
   margin-top: 9rem;
 }
 .img-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 2.4rem;
+  gap: 3rem;
   margin-top: 9.6rem;
 }
 .img-container img {

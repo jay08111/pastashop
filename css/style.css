@@ -22,9 +22,14 @@ header {
   background-position: center;
   object-fit: cover;
 }
+.left {
+  font-size: 3rem;
+  font-weight: 600;
+}
 .right {
   justify-content: center;
   align-items: center;
+  font-size: 3rem;
 }
 .right img {
   width: 100%;

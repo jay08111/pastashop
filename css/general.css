@@ -8,6 +8,7 @@
   2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 
 */
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
 :root {
   --primary: #fdf2e9;
   --secondary: #f3bf91;
@@ -21,6 +22,7 @@
 }
 html {
   font-size: 62.5%;
+  font-family: "Rubik", sans-serif;
 }
 a {
   text-decoration: none;

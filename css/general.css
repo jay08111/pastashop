@@ -49,6 +49,7 @@ span {
 }
 .flex {
   display: flex;
+  flex-direction: column;
 }
 .center {
   justify-content: center;
@@ -66,6 +67,7 @@ span {
 .grid--col--4 {
   grid-template-columns: repeat(4, 1fr);
 }
+
 .nav-container {
   width: 200px;
 }

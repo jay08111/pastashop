@@ -2,58 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/general.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
   <title>Pasta shop</title>
 </head>
 
 <body>
+  <nav>
+    <div class='navbar'>
+      <i class="fas fa-bars"></i>
+      <h1>pasta shop</h1>
+      <i class="fas fa-cart-plus"></i>
+    </div>
+  </nav>
   <header>
-    <nav>
-      <div class="logo">
-        <a href="./index.html">logo</a>
+    <div class='header'>
+      <div class='header-box'>
+        <h1 class='header-p'>
+          welcome to our store
+        </h1>
       </div>
-      <div class="nav-container">
-        <ul>
-          <li><a href="index.html">홈</a></li>
-          <li><a href="./menu/menu.html">메뉴</a></li>
-          <li><a href="./map/map.html">오시는길</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="slide-container grid grid--col--2 center gap">
-      <section class="left">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione?
-      </section>
-      <div class="event-img">
-
-      </div>
+    </div>
   </header>
-  </div>
-  <main class="container flex center">
-    <div class='grid grid--col--2 gap center'>
-      <div class="second-container">
-        <section class="left">
-
+  <main>
+    <section class='container'>
+      <h2>메뉴</h2>
+      <div class="underline"></div>
+      <div class="food-container">
+        <img src="./images/Aglio-Olio.png" alt="pasta">
+        <div>
+          <span>$12</span>
+          <button>주문하기</button>
+        </div>
       </div>
-      </section>
-    </div>
-    <section class="right grid">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores distinctio a sunt debitis minima unde non
-      error ex atque, ipsam provident ab aliquid aperiam nemo eos dolor quaerat deleniti mollitia.
     </section>
-    </div>
   </main>
-  <div class="img-container grid grid--col--4">
-    <img src="./images/alleVongole.png" alt="pasta" />
-    <img src="./images/Lasagne.png" alt="side" />
-    <img src="./images/PastaSalad.png" alt="pasta" />
-    <img src="./images/redWine.png" alt="wine" />
-  </div>
-  <footer>&copy; made by hoyeoun</footer>
 </body>
 <script src="./app.js"></script>
 

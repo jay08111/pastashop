@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 65%;
+  font-family: "Roboto", sans-serif;
+}
+nav {
+  padding: 1rem 6rem;
+  font-size: 1.6rem;
+}
+nav h1 {
+  font-weight: 300;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  z-index: 2;
+}
+.header {
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-box {
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 5rem;
+  text-align: center;
+}
+.header-p {
+  border: 7px solid #f09d51;
+  padding: 5rem;
+  font-size: 2.8rem;
+}
+.container {
+  margin-top: 3rem;
+}
+.container h2 {
+  text-align: center;
+}
+.food-container {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 2rem;
+}
+.food-container div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

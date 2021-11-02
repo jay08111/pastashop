@@ -1,37 +1,29 @@
-let sliderImages = document.querySelectorAll(".slide");
-const arrowLeft = document.querySelector(".arrow-left");
-const arrowRight = document.querySelector(".arrow-right");
-let current = 0;
+"use strict";
+const foodContainer = document.querySelector(".food-container");
 
-const reset = () => {
-  for (let i = 0; i < sliderImages.length; i++) {
-    sliderImages[i].style.display = "none";
+const getPasta = async () => {
+  try {
+    const res = await fetch("pasta.json");
+    const data = await res.json();
+    console.log(data);
+    return data;
+  } catch (error) {
+    console.log(error);
   }
 };
-const startSlide = () => {
-  reset();
-  sliderImages[0].style.display = "block";
+const displayItem = (item) => {
+  let result = "";
+  item.map((pasta) => {
+    result += ` <div class="food-container">
+    <img src=${pasta.image} alt=${pasta.name}>
+    <div>
+      <span>$${pasta.price}</span>
+      <button>주문하기</button>
+    </div>
+  </div>`;
+  });
+  foodContainer.innerHTML = result;
 };
-const slideLeft = () => {
-  reset();
-  sliderImages[current - 1].style.display = "block";
-  current--;
-};
-const slideRight = () => {
-  reset();
-  sliderImages[current + 1].style.display = "block";
-  current++;
-};
-arrowLeft.addEventListener("click", function () {
-  if (current === 0) {
-    current = sliderImages.length;
-  }
-  slideLeft();
+document.addEventListener("DOMContentLoaded", () => {
+  getPasta().then((pasta) => displayItem(pasta));
 });
-arrowRight.addEventListener("click", function () {
-  if (current === sliderImages.length - 1) {
-    current = -1;
-  }
-  slideRight();
-});
-startSlide();

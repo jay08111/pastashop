@@ -29,67 +29,60 @@
       "image": "../images/Bolognese.png"
     },
     {
-      "id": "6",
+      "id": "5",
       "name": "Carbonara",
       "type": "cream",
       "price": 12.99,
       "image": "../images/Carbonara.png"
     },
     {
-      "id": "7",
+      "id": "6",
       "name": "Lasagne",
       "type": "side",
       "price": 9.0,
       "image": "../images/Lasagne.png"
     },
     {
-      "id": "8",
+      "id": "7",
       "name": "PastaSalad",
       "type": "side",
       "price": 8.99,
       "image": "../images/PastaSalad.png"
     },
     {
-      "id": "9",
+      "id": "8",
       "name": "Macaronnes",
       "type": "side",
       "price": 8.0,
       "image": "../images/Macaronnes.png"
     },
     {
-      "id": "10",
+      "id": "9",
       "name": "Shrimp",
       "type": "side",
       "price": 10.99,
       "image": "../images/Shrimp.png"
     },
     {
-      "id": "11",
+      "id": "10",
       "name": "water",
       "type": "free",
       "price": "무료",
       "image": "../images/water.png"
     },
     {
-      "id": "12",
+      "id": "11",
       "name": "redWine",
       "type": "wine",
       "price": 21.99,
       "image": "../images/redWine.png"
     },
     {
-      "id": "13",
+      "id": "12",
       "name": "whiteWine",
       "type": "wine",
       "price": 21.99,
       "image": "../images/whiteWine.png"
-    },
-    {
-      "id": "14",
-      "name": "Champagne",
-      "type": "wine",
-      "price": 32.4,
-      "image": "../images/Champagne.png"
     }
   ]
 }

@@ -65,21 +65,21 @@
     },
     {
       "id": "10",
-      "name": "water",
+      "name": "Water",
       "type": "free",
       "price": "무료",
       "image": "../images/water.png"
     },
     {
       "id": "11",
-      "name": "redWine",
+      "name": "RedWine",
       "type": "wine",
       "price": 21.99,
       "image": "../images/redWine.png"
     },
     {
       "id": "12",
-      "name": "whiteWine",
+      "name": "WhiteWine",
       "type": "wine",
       "price": 21.99,
       "image": "../images/whiteWine.png"

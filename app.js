@@ -15,9 +15,13 @@ const displayItem = (item) => {
   item.map((pasta) => {
     result += `<div class="food-order">
       <img src=${pasta.image} alt=${pasta.name} class="food-img">
+      <button class="food-bagBtn" data-id=${pasta.id}>
+      <i class="fas fa-shopping-cart"></i>
+      장바구니에 담기
+    </button>
       <div class="food-description">
         <span>$${pasta.price}</span>
-        <span>${pasta.name}</span>
+        <span class="food-name">${pasta.name}</span>
       </div>
     </div>`;
   });

@@ -7,6 +7,12 @@ body {
   font-size: 65%;
   font-family: "Roboto", sans-serif;
 }
+i {
+  cursor: pointer;
+}
+/****************************
+nav bar section
+***********************************/
 nav {
   padding: 1rem 6rem;
   font-size: 1.6rem;
@@ -22,9 +28,7 @@ nav h1 {
 nav h1 span {
   color: #f09d51;
 }
-i {
-  cursor: pointer;
-}
+
 .navbar {
   display: flex;
   align-items: center;
@@ -32,6 +36,9 @@ i {
   width: 100%;
   height: 40px;
 }
+/****************************
+header section
+***********************************/
 .header {
   background-image: url(../images/hero.jpg);
   background-repeat: no-repeat;
@@ -56,6 +63,9 @@ i {
 .header-p span {
   color: #fabf88;
 }
+/****************************
+food container section
+***********************************/
 .container {
   margin-top: 3rem;
 }
@@ -86,12 +96,42 @@ i {
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+.food-bagBtn {
+  border: none;
+  background-color: #f09d51;
+  border-radius: 8px;
+  height: 1.7rem;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.food-bagBtn:hover {
+  background-color: #fabf88;
+  color: #fff;
+}
 .food-description {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-footer {
+.food-description span {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.food-name {
+  color: #a55101;
+}
+/****************************
+cart section
+***********************************/
+.cart-overlay {
+  visibility: hidden;
+}
+/****************************
+footer section
+***********************************/
+.center {
+  width: 90vw;
+  margin: -4rem auto;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }

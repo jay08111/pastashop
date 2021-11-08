@@ -124,14 +124,78 @@ food container section
 cart section
 ***********************************/
 .cart-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s linear;
+  background: rgb(240, 157, 81, 0.5);
+  z-index: 2;
   visibility: hidden;
+}
+.cart {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  z-index: 3;
+  background: rgb(231, 226, 221);
+  padding: 1.5rem;
+  transition: all 0.2s linear;
+  transform: translateX(100%);
+}
+.showCart {
+  transform: translateX(0);
+}
+.visible {
+  visibility: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .cart {
+    width: 30vw;
+    min-width: 450px;
+  }
+}
+/****************************
+cart item section
+***********************************/
+.close-cart {
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.cart h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+.cart-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 3rem;
+}
+.banner-btn {
+  padding: 0.75rem 4rem;
+  border: none;
+  background-color: #f5b070;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1 linear;
+}
+.banner-btn:hover {
+  color: #fff;
 }
 /****************************
 footer section
 ***********************************/
 .center {
   width: 90vw;
-  margin: -4rem auto;
+  margin: 3rem auto;
   text-align: center;
   font-size: 1.8rem;
 }

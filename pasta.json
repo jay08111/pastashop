@@ -84,5 +84,27 @@
       "price": 21.99,
       "image": "../images/whiteWine.png"
     }
+  ],
+  "reviews": [
+    {
+      "name": "Hoyeoun Byun",
+      "review": "This cozy restaurant has left the best impressions! Hospitable hosts, delicious dishes, beautiful presentation, wide wine list and wonderful dessert. I recommend to everyone! I would like to come back here again and again.",
+      "image": "../images/HoyeounByun.jpg"
+    },
+    {
+      "name": "Ladaysha Mullins",
+      "review": "First time in (RN) and YOU have to go! It’s the cutest little spot with amazing food. The (FN) is to die for. IT WAS FIRE!! The service we received was so amazing and we will definitely be back again. They made us feel welcomed and gave us an amazing experience.",
+      "image": "../images/LaDayShaMullins.jpeg"
+    },
+    {
+      "name": "John Doe",
+      "review": "It’s a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.",
+      "image": "../images/JohnDoe.jpg"
+    },
+    {
+      "name": "Eddie Money",
+      "review": "This place is great! Atmosphere is chill and cool but the staff is also really friendly. They know what they’re doing and what they’re talking about, and you can tell making the customers happy is their main priority. Food is pretty good, some italian classics and some twists, and for their prices it’s 100% worth it.",
+      "image": "../images/eddieMoney.png"
+    }
   ]
 }

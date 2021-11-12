@@ -67,7 +67,7 @@
       "id": "10",
       "name": "Water",
       "type": "free",
-      "price": "무료",
+      "price": 1,
       "image": "../images/water.png"
     },
     {

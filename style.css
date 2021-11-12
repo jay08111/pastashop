@@ -122,6 +122,17 @@ food container section
 .food-name {
   color: #a55101;
 }
+
+@media screen and (max-width: 830px) {
+  .food-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 580px) {
+  .food-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /****************************
 cart section
 ***********************************/
@@ -190,8 +201,12 @@ cart item section
 .cart-footer .space {
   margin-left: 2rem;
 }
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+}
 .banner-btn {
-  padding: 0.75rem 4rem;
+  padding: 0.75rem 2rem;
   border: none;
   background-color: #f5b070;
   border-radius: 10px;
@@ -201,6 +216,12 @@ cart item section
 }
 .banner-btn:hover {
   color: #fff;
+}
+.cart-order {
+  background-color: #d3cbc5;
+}
+.cart-order:hover {
+  background-color: #f5b070;
 }
 .cart-item {
   display: grid;

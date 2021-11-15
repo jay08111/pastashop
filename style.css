@@ -39,6 +39,21 @@ nav h1 span {
   width: 100%;
   height: 40px;
 }
+@media screen and (max-width: 360px) {
+  nav {
+    padding: 1rem 0rem;
+  }
+  nav h1 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  nav {
+    padding: 1rem 2rem;
+  }
+}
+@media screen and (max-width: 340px) {
+}
 /****************************
 header section
 ***********************************/
@@ -64,6 +79,24 @@ header section
 }
 .header-p span {
   color: #fabf88;
+}
+@media screen and (max-width: 392px) {
+  .header-box {
+    padding: 0;
+  }
+  .header-p {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header-box {
+    padding: 3rem 0;
+  }
+}
+@media screen and (max-width: 280px) {
+  .header-p {
+    padding: 1rem;
+  }
 }
 /****************************
 food container section
@@ -122,7 +155,6 @@ food container section
 .food-name {
   color: #a55101;
 }
-
 @media screen and (max-width: 830px) {
   .food-container {
     grid-template-columns: repeat(3, 1fr);
@@ -131,6 +163,11 @@ food container section
 @media screen and (max-width: 580px) {
   .food-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 362px) {
+  .food-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 /****************************

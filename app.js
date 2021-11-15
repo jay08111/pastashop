@@ -78,8 +78,6 @@ const setPastaData = (pasta) => {
 };
 const getPastaData = (id) => {
   const getPasta = JSON.parse(localStorage.getItem("pasta"));
-  console.log(getPasta.find((items) => items.id === id));
-  console.log(getPasta);
   return getPasta.find((items) => items.id === id);
 };
 // get all of buttons and set buttons to buttonArr array
@@ -106,6 +104,10 @@ const removeItem = (id) => {
   let button = getSingleButton(id);
   button.disabled = false;
   button.innerHTML = `<i class="fas fa-shopping-cart"></i> 장바구니에 담기`;
+};
+// get single buttons
+const getSingleButton = (id) => {
+  return buttonArr.find((btns) => btns.dataset.id === id);
 };
 // clear all of items from cart
 const clearCartItems = () => {
@@ -143,10 +145,6 @@ const clearCartItems = () => {
       }
     }
   });
-};
-// get single buttons
-const getSingleButton = (id) => {
-  return buttonArr.find((btns) => btns.dataset.id === id);
 };
 // set cart total price
 const setCartValue = (cart) => {

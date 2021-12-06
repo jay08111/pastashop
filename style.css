@@ -179,9 +179,9 @@ cart section
   right: 0;
   width: 100%;
   height: 100%;
-  /* transition: all 0.2s linear; */
+  transition: all 0.2s ease-in-out;
   background: rgb(240, 157, 81, 0.5);
-  z-index: 2;
+  z-index: 3;
   visibility: hidden;
 }
 .cart {
@@ -194,7 +194,7 @@ cart section
   z-index: 3;
   background: rgb(231, 226, 221);
   padding: 1.5rem;
-  /* transition: all 0.2s linear; */
+  transition: all 0.2s ease-in-out;
   transform: translateX(100%);
 }
 .showCart {

@@ -7,7 +7,9 @@ body {
   font-size: 65%;
   font-family: "Roboto", sans-serif;
 }
-
+img {
+  display: block;
+}
 /****************************
 nav bar section
 ***********************************/
@@ -17,7 +19,7 @@ nav {
   background: rgb(231, 226, 221);
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 2;
 }
 nav h1 {
   font-weight: 300;
@@ -102,7 +104,7 @@ header section
 food container section
 ***********************************/
 .container {
-  margin-top: 3rem;
+  margin-top: 12rem;
 }
 .container .title h2 {
   font-size: 2rem;
@@ -359,4 +361,40 @@ footer section
   margin: 3rem auto;
   text-align: center;
   font-size: 1.8rem;
+}
+/****************************
+swiper styling
+***********************************/
+.slider {
+  height: 35vh;
+  padding: 3rem;
+  margin-bottom: 1.2rem;
+}
+.swiper img {
+  object-fit: cover;
+  width: 50vw;
+  height: 40vh;
+  border-radius: 11px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  color: #000;
+}
+.swiper-slide p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000 !important;
+  border: white solid 1px;
+}
+@media screen and (max-width: 419px) {
+  .swiper-pagination {
+    display: none;
+  }
 }

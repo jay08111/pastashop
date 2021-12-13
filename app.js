@@ -1,4 +1,5 @@
 "use strict";
+import Swiper from "https://unpkg.com/swiper@7/swiper-bundle.esm.browser.min.js";
 //variables
 const foodContainer = document.querySelector(".food-container");
 const cartIcon = document.querySelector(".cart-icon");
@@ -14,6 +15,7 @@ const reviewContent = document.querySelector(".review-content");
 const cartTotal = document.querySelector(".cart-total");
 const cartOrder = document.querySelector(".cart-order");
 const clearCart = document.querySelector(".clear-cart");
+const swiperWrapper = document.querySelector(".swiper-wrapper");
 
 let buttonArr = [];
 let cartArr = [];
@@ -31,15 +33,16 @@ const getPasta = async () => {
 const displayItem = (item) => {
   let result = "";
   item.data.map((pasta) => {
+    const { image, name, id, price } = pasta;
     result += `<div class="food-order">
-      <img src=${pasta.image} alt=${pasta.name} class="food-img">
-      <button class="food-bagBtn" data-id=${pasta.id}>
+      <img src=${image} alt=${name} class="food-img">
+      <button class="food-bagBtn" data-id=${id}>
       <i class="fas fa-shopping-cart"></i>
       장바구니에 담기
     </button>
       <div class="food-description">
-        <span>$${pasta.price}</span>
-        <span class="food-name">${pasta.name}</span>
+        <span>$${price}</span>
+        <span class="food-name">${name}</span>
       </div>
     </div>`;
   });
@@ -48,29 +51,44 @@ const displayItem = (item) => {
 const addCartItem = (item) => {
   const div = document.createElement("div");
   div.classList.add("cart-item");
-  div.innerHTML = `<img src=${item.image} alt=${item.name}>
+  const { image, name, price, id, amount } = item;
+  div.innerHTML = `<img src=${image} alt=${name}>
                         <div class='cart-main'>
-                          <h4>${item.name}</h4>
-                          <h5>$<span></span>${item.price}</h5>
-                          <span class='remove-item' data-id=${item.id}><i class="fas fa-trash"></i><span></span>remove</span>
+                          <h4>${name}</h4>
+                          <h5>$<span></span>${price}</h5>
+                          <span class='remove-item' data-id=${id}><i class="fas fa-trash"></i><span></span>remove</span>
                         </div>
                         <div class='cart-secondary'>
-                          <i class="fas fa-chevron-up" data-id=${item.id}></i>
-                          <p class="item-amount">${item.amount}</p>
-                          <i class="fas fa-chevron-down" data-id=${item.id}></i>
+                          <i class="fas fa-chevron-up" data-id=${id}></i>
+                          <p class="item-amount">${amount}</p>
+                          <i class="fas fa-chevron-down" data-id=${id}></i>
                         </div>`;
   cartContent.appendChild(div);
 };
 const displayReviews = (item) => {
   let result = "";
   item.review.map((item) => {
-    result += `<img src=${item.image} alt=${item.name} class='review-img'>
+    const { image, name, review } = item;
+    result += `<img src=${image} alt=${name} class='review-img'>
   <div class='review-main'>
-    <h4 class='review-name'>${item.name}</h4>
-    <p class='review-description'>${item.review}</p>
+    <h4 class='review-name'>${name}</h4>
+    <p class='review-description'>${review}</p>
   </div>`;
   });
   reviewContent.innerHTML = result;
+};
+const swiperImages = (item) => {
+  let result = "";
+  item.data.map((items) => {
+    const { image, name } = items;
+    result += `<div class='swiper-slide'>
+     <p>${name}</p>
+    <img src='${image}' alt=${name}/>
+   
+    </div>`;
+  });
+
+  swiperWrapper.innerHTML = result;
 };
 //set and get localstorage
 const setPastaData = (pasta) => {
@@ -158,18 +176,22 @@ const setCartValue = (cart) => {
 const showCart = () => {
   overLay.classList.add("visible");
   cart.classList.add("showCart");
+  swiper.autoplay.stop();
 };
 const closingCart = () => {
   overLay.classList.remove("visible");
   cart.classList.remove("showCart");
+  swiper.autoplay.start();
 };
 const showReviewCart = () => {
   reviewOverLay.classList.add("visible");
   reviewCart.classList.add("showCart");
+  swiper.autoplay.stop();
 };
 const closeReviewCart = () => {
   reviewOverLay.classList.remove("visible");
   reviewCart.classList.remove("showCart");
+  swiper.autoplay.start();
 };
 
 //Event Listeners
@@ -179,6 +201,7 @@ document.addEventListener("DOMContentLoaded", () => {
       displayItem(pasta);
       setPastaData(pasta);
       displayReviews(pasta);
+      swiperImages(pasta);
     })
     .then(() => {
       getBagBtns();
@@ -196,4 +219,25 @@ cartOrder.addEventListener("click", () => {
     window.alert("주문완료!");
     location.reload();
   }
+});
+// swiper
+const swiper = new Swiper(".swiper", {
+  autoplay: {
+    delay: 3000,
+  },
+  effect: "fade",
+  fadeEffect: {
+    crossFade: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+  },
+  controller: {
+    inverse: false,
+  },
+  // navigation: {
+  //   nextEl: ".swiper-button-next",
+  //   prevEl: ".swiper-button-prev",
+  // },
 });

@@ -3,8 +3,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/jay08111/cockTailBar.git">
-    <img src="/src/pictures/TheBar.png" alt="Logo" width="100" height="100">
+  <a href="https://pastashop-hoyeoun.netlify.app/">
+    <img src="./images/logo.png" alt="Logo" width="100" height="100">
   </a>
 
 <h3 align="center">Pasta shop</h3>
@@ -13,30 +13,6 @@
    파스타 스토어의 메뉴 , 메뉴를 카트에 추가 , 수량조절 , 삭제  등을 할수있는 프로젝트입니다.
   </p>
 </div>
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
- <li><a href="#git-flow">git-flow</a></li>
-    <li><a href="#description">Description</a></li>
-    <li><a href="#contact">Contact</a></li>
-   <li><a href="#url">project URL</a></li> 
-  </ol>
-</details>
 
 <!-- ABOUT THE PROJECT -->
 

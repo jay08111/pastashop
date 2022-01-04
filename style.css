@@ -60,7 +60,7 @@ nav h1 span {
 header section
 ***********************************/
 .header {
-  background-image: url(../images/hero.jpg);
+  background-image: url(./images/hero.jpg);
   background-size: cover;
   height: 80vh;
   display: flex;

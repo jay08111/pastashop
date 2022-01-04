@@ -19,6 +19,7 @@ const swiperWrapper = document.querySelector(".swiper-wrapper");
 
 let buttonArr = [];
 let cartArr = [];
+
 //async fetch function
 const getPasta = async () => {
   try {
@@ -236,8 +237,4 @@ const swiper = new Swiper(".swiper", {
   controller: {
     inverse: false,
   },
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
 });

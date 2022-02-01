@@ -23,7 +23,7 @@ let cartArr = [];
 //async fetch function
 const getPasta = async () => {
   try {
-    const res = await fetch("pasta.json");
+    const res = await fetch("https://jay08111.github.io/data/pasta.json");
     const data = await res.json();
     return { data: data.items, review: data.reviews };
   } catch (error) {
